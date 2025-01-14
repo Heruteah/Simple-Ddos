@@ -1,6 +1,7 @@
 const target = process.argv[2];
 const duration = process.argv[3];
-const requestsPerInterval = 500;
+const requestsPerInterval = 10000;
+const totalRequests = 1000000;
 
 if (process.argv.length < 4 || isNaN(parseInt(duration))) {
     console.log('Invalid Usage: node index.js <link target> <duration in seconds>');
