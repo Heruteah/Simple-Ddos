@@ -2,7 +2,7 @@ const https = require('https');
 
 const target = process.argv[2];
 const duration = parseInt(process.argv[3]);
-const requestsPerInterval = 1000;
+const requestsPerInterval = 1000000;
 
 if (!target || isNaN(duration) || duration <= 0) {
     console.log('Invalid Usage: node index.js <link target> <duration in seconds>');
