@@ -1,11 +1,11 @@
 ## INSTALLITION
 
 ```bash
-rm -rf Simple-Ddos
+rm -rf simple
 
-git clone https://github.com/Heruteah/Simple-Ddos
+git clone https://github.com/Heruteah/simple
 
-cd Simple-Ddos
+cd simple
 
 node h.js
 
