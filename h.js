@@ -1,7 +1,3 @@
-╭═════════════════════════════════╮
-               FLOOD DDOS         
-╰═════════════════════════════════╯
-
 const target = process.argv[2];
 const duration = parseInt(process.argv[3]);
 
