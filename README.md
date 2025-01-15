@@ -2,13 +2,9 @@
 
 ```bash
 rm -rf simple
-
 git clone https://github.com/Heruteah/simple
-
 cd simple
-
 node h.js
-
 ```
 ## USAGE
 
